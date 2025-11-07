@@ -138,13 +138,16 @@
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txtContrase&#xf1;a">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="123"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtContrase&#xf1;aActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txtUsuario">
       <Properties>
-        <Property name="text" type="java.lang.String" value="user1"/>
+        <Property name="text" type="java.lang.String" value="user2"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtUsuarioActionPerformed"/>
@@ -152,7 +155,7 @@
     </Component>
     <Component class="javax.swing.JTextField" name="txtBaseDeDatos">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Envios"/>
+        <Property name="text" type="java.lang.String" value="Envios5"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtBaseDeDatosActionPerformed"/>

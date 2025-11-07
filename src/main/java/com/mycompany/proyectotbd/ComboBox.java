@@ -22,7 +22,7 @@ public class ComboBox {
         try {
             
             modelo.addElement("");
-            String consulta = "SELECT tipid FROM Tipos";
+            String consulta = "SELECT Tipnombre FROM Tipos";
             Statement st = con.createStatement();
             ResultSet rs = st.executeQuery(consulta);
             

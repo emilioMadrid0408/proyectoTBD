@@ -27,6 +27,7 @@ public class Login extends javax.swing.JFrame {
     public Login() {
         initComponents();
         txtEtiquetaErrores.setVisible(false);
+       
     }
 
     /**
@@ -75,20 +76,21 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
+        txtContraseña.setText("123");
         txtContraseña.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtContraseñaActionPerformed(evt);
             }
         });
 
-        txtUsuario.setText("user1");
+        txtUsuario.setText("user2");
         txtUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtUsuarioActionPerformed(evt);
             }
         });
 
-        txtBaseDeDatos.setText("Envios");
+        txtBaseDeDatos.setText("Envios5");
         txtBaseDeDatos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtBaseDeDatosActionPerformed(evt);

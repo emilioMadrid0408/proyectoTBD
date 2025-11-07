@@ -258,7 +258,16 @@ public class Consulta extends javax.swing.JFrame {
         PreparedStatement ps;
         ResultSet rs;
         ResultSetMetaData rsmd;
-        String consulta = "SELECT * FROM Clientes WHERE 1=1 ";
+        String consulta = "SELECT "
+                + "c.cliid, "
+                + "c.clinombre, "
+                + "c.cliapellidos,"
+                + "(CASE WHEN c.clisexo LIKE 'M' THEN 'Masculino' ELSE 'Femenino' END),"
+                + "c.clilimitecredito, "
+                + "t.tipnombre "
+                + "FROM Clientes c "
+                + "INNER JOIN Tipos t ON t.tipid = c.tipid "
+                + "WHERE 1=1 ";
         
         int columnas;
         try {
@@ -281,7 +290,7 @@ public class Consulta extends javax.swing.JFrame {
             }
             
             if (!(tipid.equals(""))){
-                consulta = consulta + " AND  tipid = " + tipid ;
+                consulta = consulta + " AND  t.tipnombre = " + "'"+tipid+"'" ;
             }
             
             ps = con.prepareStatement(consulta);
